@@ -35,7 +35,7 @@ export default function Home() {
         
         <div className="z-10 text-center px-4 w-full max-w-4xl mx-auto">
           {/* Responsive logo scaling */}
-          <div className="md:scale-110 lg:scale-130 transform-gpu w-full flex justify-center">
+          <div className="xs:scale-110 lg:scale-130 transform-gpu w-full flex justify-center">
             <div className="w-full md:w-full">
               <GlowingLogo />
             </div>
@@ -82,13 +82,12 @@ export default function Home() {
           <div className="max-w-4xl mx-auto bg-gray-900/50 p-8 rounded-xl border border-red-900/30 hover:border-red-900/60 transition-all">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
               <div className="col-span-1">
-                <div className="aspect-square bg-gray-800 rounded-lg overflow-hidden">
+                <div className="aspect-square bg-gray-800 rounded-lg overflow-hidden relative">
                   <Image 
                     src="/images/album-art-placeholder.png" 
                     alt="Album Art" 
-                    width={300} 
-                    height={300} 
-                    className="object-cover" 
+                    fill 
+                    className="object-cover w-full h-full" 
                   />
                 </div>
               </div>
