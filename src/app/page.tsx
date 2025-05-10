@@ -33,7 +33,7 @@ export default function Home() {
           />
         </div>
         
-        <div className="z-10 text-center px-4 w-full max-w-4xl mx-auto">
+        <div className="text-center px-4 w-full max-w-4xl mx-auto">
           {/* Responsive logo scaling */}
           <div className="xs:scale-110 lg:scale-130 transform-gpu w-full flex justify-center">
             <div className="w-full md:w-full">
